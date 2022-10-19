@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("/images/backcover.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 20px;
+}
+nav > img {
+  margin-top: 20px;
+}
+.nav-items {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+}
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  color: #120e43;
+}
+.signin-btn {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 18px;
+  height: 25px;
+  border-radius: 60px;
+  border: none;
+  margin-right: 150px;
+  background: linear-gradient(to right, #5a20cb, #e03b8b);
+  /* background-color: #0000ff; */
+  color: #ffffff;
+  text-align: justify;
+  margin-top: 20px;
+}
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr 2.1fr;
+  align-items: center;
+  justify-content: space-between;
+
+  /* display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center; */
+}
+.left-section {
+  margin-bottom: 450px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+.left-section h1 {
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 76px;
+  margin-bottom: 40px;
+  color: #120e43;
+}
+.left-section h4 {
+  font-family: ROboto;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #758283;
+  margin-bottom: 40px;
+}
+.learn-more-btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: justify;
+  background-image: linear-gradient(to right, #5a20cb, #e03b8b);
+  /* background: linear-gradient(60deg,blue 70%, pink 30%); */
+}
+.vector-img {
+  position: absolute;
+  top: 500;
+  margin-top: 480px;
+}
+.vector-dot {
+  position: absolute;
+  margin-top: 480px;
+  margin-left: 60px;
+}
+
+/* Media queries for mobile response */
+
+@media screen and (max-width: 600px) {
+  body{
+       background-size: 0;
+    }
+  nav > img {
+    height: 40px;
+    width: 100px;
+  }
+  .nav-items {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    position: relative;
+    left: 50px;
+  }
+  .signin-btn {
+    padding: 0 16px;
+    position: relative;
+    left: 110px;
+  }
+  .intro-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .left-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .left-section h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .learn-more-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .large-image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 210px;
+  }
+  .vector-img {
+    position: absolute;
+    bottom: 80px;
+    width: 70px;
+  }
+  .vector-dot {
+    position: absolute;
+    margin-left: 40px;
+    bottom: 140px;
+  }
+}
